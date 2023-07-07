@@ -1,0 +1,95 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; 
+  padding: 15px;
+  background-color: #dfdfdf;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  margin-right: auto;
+}
+
+.nav-links li {
+  margin-right: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  &:hover {
+    text-decoration: none;
+    color: #999;
+  }
+}
+
+.auth-buttons {
+  margin-left: 30px; 
+  display: flex;
+  align-items: center;
+}
+
+
+.auth-buttons .user-info {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.auth-buttons button {
+  margin-left: 15px;
+  padding: 12px 15px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-buttons button a {
+  text-decoration: none;
+  color: black;
+}
+
+.auth-buttons button.login-button,
+.auth-buttons button.logout-button {
+  background-color: rgb(0,128,0);
+  width: 100px;
+  /* Adjust the width as needed */
+}
+
+.auth-buttons button.signup-button {
+  background-color: transparent;
+}
+
+.auth-buttons button.signup-button:hover {
+  background-color: rgb(0,128,0);
+}
+
+.auth-buttons button.signup-button:hover+button.login-button {
+  background-color: transparent;
+}
+
+.auth-buttons button:first-child {
+  margin-left: 0;
+}
+
+.auth-buttons button:hover {
+  background-color: rgb(0,128,0);
+  color: rgb(255, 255, 255);
+}
